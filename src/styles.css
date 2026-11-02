@@ -1,4 +1,64 @@
-/* styles.css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-  background-color: rebeccapurple;
+    background-color: #FFCA88;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background-color: #DE7272;
+}
+
+header button {
+    padding: 5px 10px;
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #DE7272;
+    color: #FFF6A9;
+    border: none;
+}
+
+header button:hover {
+    color: #FFCA88;
+    cursor: pointer;
+}
+
+#content {
+    display: grid;
+    grid-template: 1fr 19fr / repeat(2, 1fr);
+    height: calc(100vh - 88px);
+}
+
+#img-container {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+#img-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#content h1 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    font-size: 2rem;
+    color: #753d3d;
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+}
+
+#content p {
+    grid-area: 2 / 2 / span 1 / span 1;
+    font-size: 1.5rem;
+    padding: 40px;
+    color: #753d3d;
 }

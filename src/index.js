@@ -1,5 +1,7 @@
-// index.js
 import "./styles.css";
-import { greeting } from "./script.js";
+import {content, restaurantImg, restaurantDiv, title, paragraph} from "./script.js";
 
-console.log(greeting);
+content.appendChild(restaurantDiv);
+restaurantDiv.appendChild(restaurantImg);
+content.appendChild(title);
+content.appendChild(paragraph);
