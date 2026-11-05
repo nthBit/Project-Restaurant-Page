@@ -1,3 +1,5 @@
+/* Global CSS */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -30,7 +32,9 @@ header button:hover {
     cursor: pointer;
 }
 
-#content {
+/* Home CSS */
+
+#home-wrapper {
     display: grid;
     grid-template: 1fr 19fr / repeat(2, 1fr);
     height: calc(100vh - 88px);
@@ -61,4 +65,17 @@ header button:hover {
     font-size: 1.5rem;
     padding: 40px;
     color: #753d3d;
+}
+
+/* Menu CSS */
+
+#menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 88px);
+}
+
+#menu-container img {
+    width: 500px;
 }
